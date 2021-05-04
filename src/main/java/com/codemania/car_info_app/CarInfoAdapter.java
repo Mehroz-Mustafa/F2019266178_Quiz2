@@ -14,13 +14,12 @@ import java.util.ArrayList;
 public class CarInfoAdapter extends RecyclerView.Adapter<CarInfoAdapter.ViewHolder> {
 
     SelectedCarInfo selectedCarInfo;
-    ArrayList<CarInfo> carInfo;
+    ArrayList<CarDetails> carDetails;
 
-    public CarInfoAdapter(Context context, ArrayList<CarInfo> list) {
-        carInfo = list;
+    public CarInfoAdapter(Context context, ArrayList<CarDetails> list) {
+        carDetails = list;
         selectedCarInfo = (SelectedCarInfo) context;
     }
-
 
     public interface SelectedCarInfo {
         public void onInfoClick(int index);
@@ -30,12 +29,12 @@ public class CarInfoAdapter extends RecyclerView.Adapter<CarInfoAdapter.ViewHold
         TextView txv_Name;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            txv_Name = itemView.findViewById(R.id.txv_name);
+            txv_Name = itemView.findViewById(R.id.txv_name_title);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    System.out.println("Demons Summoned 1");
-                    selectedCarInfo.onInfoClick(carInfo.indexOf((CarInfo)itemView.getTag()));
+                    //System.out.println("Demons Summoned 1");
+                    selectedCarInfo.onInfoClick(carDetails.indexOf((CarDetails)itemView.getTag()));
                 }
             });
         }
@@ -50,12 +49,12 @@ public class CarInfoAdapter extends RecyclerView.Adapter<CarInfoAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.txv_Name.setText(carInfo.get(position).getCarName());
-        holder.txv_Name.setTag(carInfo.get(position).getCarNumber());
+        holder.txv_Name.setText(carDetails.get(position).getName());
+        holder.itemView.setTag(carDetails.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return carInfo.size();
+        return carDetails.size();
     }
 }

@@ -5,8 +5,9 @@
     <string name="btn_CarDetail">Car Detail</string>
     <string name="btn_OwnerDetail">Owner Detail</string>
     <string name="txv_CarName">TextView</string>
-    <string name="img_carLogo">TODO</string>
+    <string name="img_carLogo">Car Image</string>
     <string name="txv_CarDetail">TextView</string>
     <string name="txv_car_name">TextView</string>
     <string name="img_car_logo">TODO</string>
+    <string name="txv_title"> </string>
 </resources>
