@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Car-Info-App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_CarDetail">Car Detail</string>
+    <string name="btn_OwnerDetail">Owner Detail</string>
+    <string name="txv_CarName">TextView</string>
+    <string name="img_carLogo">TODO</string>
+    <string name="txv_CarDetail">TextView</string>
+    <string name="txv_car_name">TextView</string>
+    <string name="img_car_logo">TODO</string>
+</resources>

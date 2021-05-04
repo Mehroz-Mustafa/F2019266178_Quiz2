@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_CarDetail">Car Detail</string>
+    <string name="btn_OwnerDetail">Owner Detail</string>
+    <string name="txv_CarDetail">TextView</string>
+    <string name="txv_car_name">TextView</string>
+    <string name="img_car_logo">TODO</string>
+</resources>
