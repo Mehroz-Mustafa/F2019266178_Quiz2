@@ -12,18 +12,18 @@ public class CarDetailsData extends Application {
     public void onCreate() {
         super.onCreate();
         carDetails = new ArrayList<>();
-        carDetails.add(new CarDetails("Car Name: A", "Car NumberPlate: ABC-1001"));
-        carDetails.add(new CarDetails("Car Name: B", "Car NumberPlate: ABC-1002"));
-        carDetails.add(new CarDetails("Car Name: C", "Car NumberPlate: ABC-1003"));
-        carDetails.add(new CarDetails("Car Name: D", "Car NumberPlate: ABC-1004"));
-        carDetails.add(new CarDetails("Car Name: E", "Car NumberPlate: ABC-1005"));
+        carDetails.add(new CarDetails("Volkswagen", "ABC-1001", R.drawable.volkswagen));
+        carDetails.add(new CarDetails("Mercedes", "ABC-1002", R.drawable.mercedes));
+        carDetails.add(new CarDetails("Nissan", "ABC-1003", R.drawable.nissan));
+        carDetails.add(new CarDetails("Mercedes", "ABC-1004", R.drawable.mercedes));
+        carDetails.add(new CarDetails("Volkswagen", "ABC-1005", R.drawable.volkswagen));
 
         ownerDetails = new ArrayList<>();
-        ownerDetails.add(new CarDetails("Owner Name: Z", "Owner number: 090078601"));
-        ownerDetails.add(new CarDetails("Owner Name: Y", "Owner number: 090078602"));
-        ownerDetails.add(new CarDetails("Owner Name: X", "Owner number: 090078603"));
-        ownerDetails.add(new CarDetails("Owner Name: W", "Owner number: 090078604"));
-        ownerDetails.add(new CarDetails("Owner Name: V", "Owner number: 090078605"));
+        ownerDetails.add(new CarDetails("Zam zam", "090078601", R.drawable.vta_user));
+        ownerDetails.add(new CarDetails("Yalli", "090078602", R.drawable.vta_user));
+        ownerDetails.add(new CarDetails("X men", "090078603", R.drawable.vta_user));
+        ownerDetails.add(new CarDetails("Wonder man", "090078604", R.drawable.vta_user));
+        ownerDetails.add(new CarDetails("Vendor", "090078605", R.drawable.vta_user));
     }
 
 }

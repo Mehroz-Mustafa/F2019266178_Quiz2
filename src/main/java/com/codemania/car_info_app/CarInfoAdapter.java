@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -27,10 +28,18 @@ public class CarInfoAdapter extends RecyclerView.Adapter<CarInfoAdapter.ViewHold
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView txv_Name;
+        TextView txv_Owner;
+        ImageView img_CarImage;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            txv_Name = itemView.findViewById(R.id.txv_name_title);
+
+            img_CarImage = itemView.findViewById(R.id.img_car_image);
+            txv_Name = itemView.findViewById(R.id.txv_car_title);
+            txv_Owner = itemView.findViewById(R.id.txv_owner_title);
+
             itemView.setOnClickListener(new View.OnClickListener() {
+
                 @Override
                 public void onClick(View v) {
                     //System.out.println("Demons Summoned 1");
@@ -50,7 +59,20 @@ public class CarInfoAdapter extends RecyclerView.Adapter<CarInfoAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.txv_Name.setText(carDetails.get(position).getName());
+        holder.txv_Owner.setText(carDetails.get(position).getInfo());
         holder.itemView.setTag(carDetails.get(position));
+
+        switch (carDetails.get(position).getName()) {
+            case "Volkswagen":
+                holder.img_CarImage.setImageResource(R.drawable.volkswagen);
+                break;
+            case "Nissan":
+                holder.img_CarImage.setImageResource(R.drawable.nissan);
+                break;
+            case "Mercedes":
+                holder.img_CarImage.setImageResource(R.drawable.mercedes);
+                break;
+        }
     }
 
     @Override

@@ -10,4 +10,5 @@
     <string name="txv_car_name">TextView</string>
     <string name="img_car_logo">TODO</string>
     <string name="txv_title"> </string>
+    <string name="txv_owner_title">TextView</string>
 </resources>

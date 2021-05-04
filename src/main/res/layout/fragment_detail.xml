@@ -12,23 +12,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:paddingBottom="20dp"
-        android:text="@string/txv_title"
+        android:layout_marginBottom="10dp"
         android:textSize="24sp" />
-
-    <ImageView
-        android:id="@+id/img_owner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:src="@tools:sample/avatars"
-        android:contentDescription="@string/img_carLogo" />
 
     <TextView
         android:id="@+id/txv_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:paddingTop="20dp"
+        android:layout_marginTop="5dp"
         android:text="@string/txv_CarName" />
 
     <TextView
@@ -36,6 +28,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:paddingTop="5dp"
+        android:layout_marginTop="5dp"
         android:text="@string/txv_CarDetail" />
+
+    <ImageView
+        android:id="@+id/img_owner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/img_carLogo"
+        tools:src="@tools:sample/avatars" />
 </LinearLayout>
